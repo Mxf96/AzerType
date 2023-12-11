@@ -196,24 +196,25 @@ input {
 /* Pour les smartphones avec une largeur maximale de 425px */
 @media screen and (max-width: 425px) {
     .container {
-        margin: 0;
+        margin: 5px; /* Ajoutez un peu de marge pour éviter que les éléments ne touchent les bords */
         padding: 10px;
-        border-radius: 0;
+        border-radius: 5px; /* Réduisez le rayon pour mieux s'adapter à de petits écrans */
     }
     h1 {
-        font-size: 30px;
+        font-size: 24px; /* Réduisez la taille de la police pour éviter que le texte ne soit trop grand */
     }
-    p, .input, .input2 {
-        font-size: small;
-        width: 100%;
+    p {
+        font-size: 14px; /* Ajustez la taille de la police pour les paragraphes */
+    }
+    .input, .input2 {
+        width: 90%; /* Réduisez la largeur pour éviter que les champs de saisie ne soient trop larges */
+        font-size: 14px; /* Ajustez la taille de la police pour les entrées */
+        padding: 5px; /* Ajoutez un peu de rembourrage pour faciliter la saisie */
     }
     .button {
-        padding: 8px;
-        font-size: small;
-    }
-
-    .footer{
-        margin-top: auto;
+        font-size: 14px; /* Ajustez la taille de la police pour les boutons */
+        padding: 8px; /* Ajustez le rembourrage pour les boutons */
+        margin-top: 5px; /* Ajoutez une marge en haut pour plus d'espace */
     }
 }
 
