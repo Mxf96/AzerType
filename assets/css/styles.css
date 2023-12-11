@@ -4,7 +4,10 @@ html, body {
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    height: 80vh;
+    /* Retirez la hauteur fixe pour permettre au contenu de dicter la hauteur */
+    min-height: 100vh; /* Assurez-vous que le body ait au moins la hauteur de l'écran */
+    display: flex; /* Permet l'utilisation de Flexbox */
+    flex-direction: column; /* Organise les enfants en colonne */
 }
 
 /* Styles pour les titres et paragraphes */
@@ -51,9 +54,8 @@ input {
     color: #fff;
     width: 100%;
     height: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    /* Enlever position: absolute et remplacer par margin-top: auto; */
+    margin-top: auto; /* Cela pousse le footer en bas si le contenu est court */
 }
 
 /* Styles pour les champs de saisie */
@@ -196,6 +198,8 @@ input {
     .container {
         margin: 0;
         border-radius: 0;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     h1 {
         font-size: 30px;
