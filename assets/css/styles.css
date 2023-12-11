@@ -223,7 +223,7 @@ input {
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     h1 {
         font-size: 45px;
         /* légèrement plus petit */
@@ -239,6 +239,7 @@ input {
         margin-right: 10%;
         padding: 15px;
         /* plus d'espace intérieur */
+        margin-bottom: 1%;
     }
 
     .input,
