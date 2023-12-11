@@ -274,7 +274,6 @@ input {
     }
     p, .input, .input2 {
         font-size: smaller;
-        width: 75%;
     }
 
     .input, .input2 {
