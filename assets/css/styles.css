@@ -1,13 +1,17 @@
 /* Styles de base pour le HTML et le body */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     /* Retirez la hauteur fixe pour permettre au contenu de dicter la hauteur */
-    min-height: 100vh; /* Assurez-vous que le body ait au moins la hauteur de l'écran */
-    display: flex; /* Permet l'utilisation de Flexbox */
-    flex-direction: column; /* Organise les enfants en colonne */
+    min-height: 100vh;
+    /* Assurez-vous que le body ait au moins la hauteur de l'écran */
+    display: flex;
+    /* Permet l'utilisation de Flexbox */
+    flex-direction: column;
+    /* Organise les enfants en colonne */
 }
 
 /* Styles pour les titres et paragraphes */
@@ -15,6 +19,7 @@ h1 {
     font-weight: bolder;
     font-size: 50px;
 }
+
 p {
     font-size: medium;
     text-align: center;
@@ -55,11 +60,13 @@ input {
     width: 100%;
     height: 50px;
     /* Enlever position: absolute et remplacer par margin-top: auto; */
-    margin-top: auto; /* Cela pousse le footer en bas si le contenu est court */
+    margin-top: auto;
+    /* Cela pousse le footer en bas si le contenu est court */
 }
 
 /* Styles pour les champs de saisie */
-.input, .input2 {
+.input,
+.input2 {
     width: 250px;
 }
 
@@ -72,12 +79,15 @@ input {
     border-radius: 15px;
     padding: 10px;
 }
+
 .button:hover {
     border: 2px solid #ff7f50;
     background-color: #fff;
     color: #ff7f50;
 }
-.button1, .button2 {
+
+.button1,
+.button2 {
     margin-left: 15px;
 }
 
@@ -87,13 +97,16 @@ input {
     flex-direction: column;
     align-items: center;
 }
+
 .radio-group {
     display: inline-block;
     margin-right: 15px;
 }
+
 .radio-group input[type="radio"] {
     display: none;
 }
+
 .radio-group label {
     background-color: #fa5e25;
     color: #fff;
@@ -102,10 +115,12 @@ input {
     border-radius: 15px;
     cursor: pointer;
 }
-.radio-group input[type="radio"]:checked + label {
+
+.radio-group input[type="radio"]:checked+label {
     background-color: #fff;
     color: #fa5e25;
 }
+
 .radio-group label:hover {
     background-color: #ff7f50;
     color: white;
@@ -147,13 +162,17 @@ input {
         margin-right: 15%;
         padding: 20px;
     }
+
     h1 {
         font-size: 60px;
     }
+
     p {
         font-size: large;
     }
+
 }
+
 
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
     .container {
@@ -161,10 +180,13 @@ input {
         margin-right: 20%;
         padding: 15px;
     }
+
     h1 {
         font-size: 55px;
     }
+
 }
+
 
 /* Media Queries pour les tablettes */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -172,12 +194,16 @@ input {
         margin-left: 10%;
         margin-right: 10%;
     }
+
     h1 {
         font-size: 40px;
     }
-    .input, .input2 {
+
+    .input,
+    .input2 {
         width: 200px;
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -185,29 +211,42 @@ input {
         margin-left: 5%;
         margin-right: 5%;
     }
+
     h1 {
         font-size: 35px;
     }
-    .input, .input2 {
+
+    .input,
+    .input2 {
         width: 180px;
     }
+
 }
 
 @media screen and (max-width: 425px) {
     h1 {
-        font-size: 45px; /* légèrement plus petit */
+        font-size: 45px;
+        /* légèrement plus petit */
     }
+
     p {
-        font-size: 16px; /* réduit un peu */
+        font-size: 16px;
+        /* réduit un peu */
     }
+
     .container {
-        margin-left: 2%;
-        margin-right: 2%;
-        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 15px;
+        /* plus d'espace intérieur */
     }
-    .input, .input2 {
-        width: 200px; /* ajuster la largeur */
+
+    .input,
+    .input2 {
+        width: 200px;
+        /* ajuster la largeur */
     }
+
     .button {
         padding: 8px;
     }
@@ -217,17 +256,23 @@ input {
     h1 {
         font-size: 40px;
     }
+
     p {
         font-size: 15px;
     }
+
     .container {
-        margin-left: 1%;
-        margin-right: 1%;
-        padding: 8px;
+        margin-left: 8%;
+        margin-right: 8%;
+        padding: 15px;
+        /* maintien du padding pour la cohérence */
     }
-    .input, .input2 {
+
+    .input,
+    .input2 {
         width: 180px;
     }
+
     .button {
         padding: 7px;
     }
@@ -235,17 +280,28 @@ input {
 
 @media screen and (max-width: 320px) {
     h1 {
-        font-size: 35px; /* encore plus petit */
+        font-size: 35px;
+        /* encore plus petit */
     }
+
     p {
-        font-size: 14px; /* réduit davantage */
+        font-size: 14px;
+        /* réduit davantage */
     }
+
     .container {
-        padding: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 15px;
+        /* garder le même padding */
     }
-    .input, .input2 {
-        width: 160px; /* ajustement pour petits écrans */
+
+    .input,
+    .input2 {
+        width: 160px;
+        /* ajustement pour petits écrans */
     }
+
     .button {
         padding: 6px;
     }
