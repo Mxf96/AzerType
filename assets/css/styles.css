@@ -269,10 +269,15 @@ input {
         font-size: 26px;
     }
     .container {
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     p, .input, .input2 {
         font-size: smaller;
+        width: 75%;
+    }
+
+    .input, .input2 {
+        width: 75%;
     }
 }
