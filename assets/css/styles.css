@@ -178,7 +178,7 @@ input {
     }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -189,7 +189,7 @@ input {
     .input, .input2 {
         width: 180px;
     }
-} */
+}
 
 /* Media Queries pour les téléphones intelligents */
 @media screen and (max-width: 360px) {
@@ -210,10 +210,12 @@ input {
     }
 }
 
-@media screen and (max-width: 375px), screen and (max-width: 414px) {
+@media screen and (max-width: 375px), screen and (max-width: 425px) {
     .container {
         margin: 0;
         padding: 5px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
     h1 {
         font-size: 28px;
@@ -226,6 +228,10 @@ input {
 @media screen and (max-width: 320px) {
     h1 {
         font-size: 26px;
+    }
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
     }
     p, .input, .input2 {
         font-size: smaller;
