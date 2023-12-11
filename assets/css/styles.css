@@ -200,7 +200,7 @@ input {
     .container {
         margin: 0;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 30px;
         width: auto; /* Ajustez la largeur pour éviter le sur-empilement des éléments */
     }
     h1 {
