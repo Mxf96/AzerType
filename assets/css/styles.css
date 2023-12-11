@@ -178,7 +178,7 @@ input {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+/* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .container {
         margin-left: 5%;
         margin-right: 5%;
@@ -189,15 +189,12 @@ input {
     .input, .input2 {
         width: 180px;
     }
-}
+} */
 
 /* Media Queries pour les téléphones intelligents */
-
-/* Pour les smartphones avec une largeur maximale de 425px */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 360px) {
     .container {
         margin: 0;
-        padding: 10px;
         border-radius: 0;
     }
     h1 {
@@ -208,51 +205,29 @@ input {
         width: 100%;
     }
     .button {
-        padding: 8px;
+        padding: 5px;
         font-size: small;
-    }
-
-    .footer{
-        margin-top: auto;
     }
 }
 
-/* Pour les smartphones avec une largeur maximale de 375px */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), screen and (max-width: 414px) {
     .container {
-        padding: 8px;
+        margin: 0;
+        padding: 5px;
     }
     h1 {
         font-size: 28px;
     }
     .button {
-        padding: 7px;
-        font-size: smaller;
-    }
-
-    .footer{
-        margin-top: auto;
+        font-size: small;
     }
 }
 
-/* Pour les smartphones avec une largeur maximale de 320px */
 @media screen and (max-width: 320px) {
-    .container {
-        padding: 5px;
-    }
     h1 {
         font-size: 26px;
     }
-    .input, .input2 {
+    p, .input, .input2 {
         font-size: smaller;
-        width: 95%;
-    }
-    .button {
-        padding: 5px;
-        font-size: smaller;
-    }
-
-    .footer{
-        margin-top: auto;
     }
 }
