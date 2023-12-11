@@ -192,9 +192,12 @@ input {
 }
 
 /* Media Queries pour les téléphones intelligents */
-@media screen and (max-width: 360px) {
+
+/* Pour les smartphones avec une largeur maximale de 425px */
+@media screen and (max-width: 425px) {
     .container {
         margin: 0;
+        padding: 10px;
         border-radius: 0;
     }
     h1 {
@@ -205,29 +208,51 @@ input {
         width: 100%;
     }
     .button {
-        padding: 5px;
+        padding: 8px;
         font-size: small;
+    }
+
+    .footer{
+        margin-top: auto;
     }
 }
 
-@media screen and (max-width: 375px), screen and (max-width: 414px) {
+/* Pour les smartphones avec une largeur maximale de 375px */
+@media screen and (max-width: 375px) {
     .container {
-        margin: 0;
-        padding: 5px;
+        padding: 8px;
     }
     h1 {
         font-size: 28px;
     }
     .button {
-        font-size: small;
+        padding: 7px;
+        font-size: smaller;
+    }
+
+    .footer{
+        margin-top: auto;
     }
 }
 
+/* Pour les smartphones avec une largeur maximale de 320px */
 @media screen and (max-width: 320px) {
+    .container {
+        padding: 5px;
+    }
     h1 {
         font-size: 26px;
     }
-    p, .input, .input2 {
+    .input, .input2 {
         font-size: smaller;
+        width: 95%;
+    }
+    .button {
+        padding: 5px;
+        font-size: smaller;
+    }
+
+    .footer{
+        margin-top: auto;
     }
 }
