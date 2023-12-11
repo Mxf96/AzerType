@@ -25,6 +25,10 @@ Sélectionnez un mode de jeu, puis appuyez sur 'Démarrer' pour commencer. Tapez
 - CSS
 - JavaScript
 
+## Essayer AzerType en ligne
+
+Visitez [AzerType en ligne](https://mxf96.github.io/AzerType/) (https://mxf96.github.io/AzerType/) pour jouer sans installation.
+
 ## Contribution
 
 Les contributions sont les bienvenues. Veuillez soumettre une pull request ou ouvrir un problème pour discuter de ce que vous aimeriez changer.
