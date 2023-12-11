@@ -192,3 +192,63 @@ input {
         width: 180px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 45px; /* légèrement plus petit */
+    }
+    p {
+        font-size: 16px; /* réduit un peu */
+    }
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+    }
+    .input, .input2 {
+        width: 200px; /* ajuster la largeur */
+    }
+    .button {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .container {
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 8px;
+    }
+    .input, .input2 {
+        width: 180px;
+    }
+    .button {
+        padding: 7px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 35px; /* encore plus petit */
+    }
+    p {
+        font-size: 14px; /* réduit davantage */
+    }
+    .container {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 5px;
+    }
+    .input, .input2 {
+        width: 160px; /* ajustement pour petits écrans */
+    }
+    .button {
+        padding: 6px;
+    }
+}
