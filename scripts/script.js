@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let score = 0;
     let jeuActif = false;
     let mots = [];
-    const phrases = ['Le chat dort sur le canapé', 'Il fait beau aujourd\'hui', 'La voiture est rouge'];
+    let phrases = [];
 
     function afficherNouveauContenu() {
         if (motsRadio.checked) {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function chargerMots() {
-        fetch('scripts/data.json')
+        fetch('scripts/words.json')
             .then(response => response.json())
             .then(data => {
                 mots = data;
@@ -57,6 +57,15 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
     }
 
+    function chargerPhrases() {
+        fetch('scripts/sentences.json')
+            .then(response => response.json())
+            .then(data => {
+                phrases = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du fichier sentences.json:', error));
+    }
+    
     function endGame() {
         jeuActif = false;
         inputUser.disabled = true; // Désactiver l'entrée utilisateur
@@ -74,12 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
         ErrorMessage.style.display = 'none';
     }
 
-    document.querySelectorAll('input[name="optionSource"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-            toggleTimerDisplay();
-            reinitialiserMessageMinuteur(); // Ajoutez cet appel ici
-        });
-    });
 
     function toggleTimerDisplay() {
         timerDisplay.style.display = expertModeRadio.checked ? "block" : "none";
@@ -101,9 +104,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Ajout d'un écouteur d'événement pour les boutons radio
+    // Fonction pour réinitialiser les champs de texte
+    function reinitialiserChampsTexte() {
+        inputDisplay.value = '';
+        inputUser.value = '';
+    }
+
+    // Écouteur d'événement sur les changements des boutons radio
     document.querySelectorAll('input[name="optionSource"]').forEach(radio => {
-        radio.addEventListener('change', toggleTimerDisplay);
+        radio.addEventListener('change', function() {
+            reinitialiserChampsTexte(); // Réinitialiser les champs à chaque changement
+            toggleTimerDisplay();
+            reinitialiserMessageMinuteur();
+        });
     });
 
     // Appeler toggleTimerDisplay au chargement pour masquer le minuteur
@@ -123,4 +136,5 @@ document.addEventListener('DOMContentLoaded', function () {
         inputUser.addEventListener('input', verifierReponse);
     }
     chargerMots();
+    chargerPhrases();
 });
