@@ -5,13 +5,9 @@ body {
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    /* Retirez la hauteur fixe pour permettre au contenu de dicter la hauteur */
     min-height: 100vh;
-    /* Assurez-vous que le body ait au moins la hauteur de l'écran */
     display: flex;
-    /* Permet l'utilisation de Flexbox */
     flex-direction: column;
-    /* Organise les enfants en colonne */
 }
 
 /* Styles pour les titres et paragraphes */
@@ -59,9 +55,7 @@ input {
     color: #fff;
     width: 100%;
     height: 50px;
-    /* Enlever position: absolute et remplacer par margin-top: auto; */
     margin-top: auto;
-    /* Cela pousse le footer en bas si le contenu est court */
 }
 
 /* Styles pour les champs de saisie */
@@ -226,26 +220,22 @@ input {
 @media screen and (max-width: 767px) {
     h1 {
         font-size: 45px;
-        /* légèrement plus petit */
     }
 
     p {
         font-size: 16px;
-        /* réduit un peu */
     }
 
     .container {
         margin-left: 10%;
         margin-right: 10%;
         padding: 15px;
-        /* plus d'espace intérieur */
         margin-bottom: 1%;
     }
 
     .input,
     .input2 {
         width: 200px;
-        /* ajuster la largeur */
     }
 
     .button {
@@ -282,25 +272,21 @@ input {
 @media screen and (max-width: 320px) {
     h1 {
         font-size: 35px;
-        /* encore plus petit */
     }
 
     p {
         font-size: 14px;
-        /* réduit davantage */
     }
 
     .container {
         margin-left: 5%;
         margin-right: 5%;
         padding: 15px;
-        /* garder le même padding */
     }
 
     .input,
     .input2 {
         width: 160px;
-        /* ajustement pour petits écrans */
     }
 
     .button {
