@@ -1,0 +1,293 @@
+/* html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    height: 80vh;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+p {
+    font-size: medium;
+    text-align: center;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 25px;
+    border: 2px solid #fff;
+    color: #ff7f50;
+    background-color: #ffffff;
+    font-weight: bolder;
+}
+
+.header {
+    text-align: center;
+    color: #fa5e25;
+}
+
+.container {
+    background-color: #fa5e25;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 28%;
+    margin-right: 28%;
+}
+
+.input {
+    width: 250px;
+}
+
+.input2 {
+    width: 280px;
+}
+
+.button {
+    color: #fff;
+    background-color: #fa5e25;
+    font-weight: bolder;
+    border: 2px solid #fa5e25;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.button1 {
+    margin-left: 15px;
+}
+
+.button2 {
+    margin-top: 15px;
+}
+
+.button:hover {
+    border: 2px solid #ff7f50;
+    background-color: #fff;
+    color: #ff7f50;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: #fa5e25;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.content-wrapper {
+    min-height: calc(100% - 50px); /* Hauteur du footer à soustraire */
+    /*padding-bottom: 50px; /* Espace pour le footer */
+    /*box-sizing: border-box;
+}
+
+.radio-group {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    background-color: #fa5e25;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #fa5e25;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #fff;
+    color: #fa5e25;
+}
+
+.radio-group label:hover {
+    background-color: #ff7f50;
+    color: white; 
+    border-color: #ff7f50;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.error {
+    color: #fff; 
+    display: none;
+    background-color: #ff0000;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.time {
+    color: #fff;
+    display: none;
+}
+
+.score {
+    background-color: #fff;
+    color: #fa5e25;
+    font-weight: bolder;
+    margin-left: 37%;
+    margin-right: 37%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+ */
+
+ /* Styles de base pour le HTML et le body */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    height: 80vh;
+}
+
+/* Styles pour les titres et paragraphes */
+h1 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+p {
+    font-size: medium;
+    text-align: center;
+}
+
+/* Styles pour les éléments input */
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: 25px;
+    border: 2px solid #fff;
+    color: #ff7f50;
+    background-color: #ffffff;
+    font-weight: bolder;
+}
+
+/* Styles pour l'en-tête, le conteneur principal et le pied de page */
+.header {
+    text-align: center;
+    color: #ff7f50;
+}
+
+.footer {
+    text-align: center;
+    background-color: #fa5e25;
+    color: #fff;
+}
+.container {
+    background-color: #fa5e25;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 28%;
+    margin-right: 28%;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Styles pour les champs de saisie */
+.input, .input2 {
+    width: 250px; /* Ajustez selon les besoins */
+}
+
+/* Styles pour les boutons */
+.button {
+    color: #fff;
+    background-color: #fa5e25;
+    font-weight: bolder;
+    border: 2px solid #fa5e25;
+    border-radius: 15px;
+    padding: 10px;
+}
+.button:hover {
+    border: 2px solid #ff7f50;
+    background-color: #fff;
+    color: #ff7f50;
+}
+.button1, .button2 {
+    margin-left: 15px; /* Ajustez selon les besoins */
+}
+
+/* Styles pour le centrage et les groupes radio */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.radio-group {
+    display: inline-block;
+    margin-right: 15px;
+}
+.radio-group input[type="radio"] {
+    display: none;
+}
+.radio-group label {
+    background-color: #fa5e25;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #fa5e25;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.radio-group input[type="radio"]:checked + label {
+    background-color: #fff;
+    color: #fa5e25;
+}
+.radio-group label:hover {
+    background-color: #ff7f50;
+    color: white; 
+    border-color: #ff7f50;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Styles pour les messages d'erreur et de temps */
+.error {
+    color: #fff;
+    display: none;
+    background-color: #ff0000;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.time {
+    color: #fff;
+    display: none;
+}
+
+/* Styles pour l'affichage du score */
+.score {
+    background-color: #fff;
+    color: #fa5e25;
+    font-weight: bolder;
+    margin-left: 37%;
+    margin-right: 37%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
