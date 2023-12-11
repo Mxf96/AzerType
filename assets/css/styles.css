@@ -210,7 +210,7 @@ input {
         font-size: 14px; /* Réduisez la taille de la police pour les paragraphes */
     }
     .input, .input2 {
-        width: 90%; /* Réduisez la largeur des champs de saisie pour plus d'espace */
+        width: 60%; /* Réduisez la largeur des champs de saisie pour plus d'espace */
         margin-top: 5px; /* Augmentez l'espace au-dessus des champs */
         margin-bottom: 5px; /* Augmentez l'espace en dessous des champs */
     }
